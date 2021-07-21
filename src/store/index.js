@@ -7,16 +7,16 @@ export default createStore({
     count: 0,
   },
   mutations: {
-    add(state, value) {
+    setCount(state, value) {
       state.count = value;
     }
   },
   actions: {
     addAction(context){
-      context.commit('add', this.state.count+1)
+      context.commit('setCount', this.state.count+1)
     },
     delAction(context){
-      context.commit('add', this.state.count+1)
+      context.commit('setCount', this.state.count-1)
     },
   },
   modules: {}
