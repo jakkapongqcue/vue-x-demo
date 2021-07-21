@@ -12,12 +12,17 @@ export default createStore({
     }
   },
   actions: {
-    addAction(context){
-      context.commit('setCount', this.state.count+1)
+    addAction(context) {
+      context.commit('setCount', this.getters.getCount + 1)
     },
-    delAction(context){
-      context.commit('setCount', this.state.count-1)
+    delAction(context) {
+      context.commit('setCount', this.getters.getCount - 1)
     },
+  },
+  getters: {
+    getCount(state) {
+      return state.count
+    }
   },
   modules: {}
 })
