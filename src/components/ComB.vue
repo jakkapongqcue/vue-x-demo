@@ -9,7 +9,7 @@
 export default {
     methods: {
         del() {
-            this.$store.dispatch("delAction");
+            this.$store.commit('setCount', this.$store.getters.getCount - 1);
         },
     },
 };
