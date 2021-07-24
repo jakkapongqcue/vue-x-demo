@@ -9,6 +9,10 @@
         <span>ComB:</span>
         <ComB></ComB>
     </div>
+    <button><router-link to="/">Home</router-link></button>
+    <button><router-link to="/object_demo">object demo</router-link></button>
+    <button><router-link to="/about">About</router-link></button>
+    <router-view></router-view>
 </template>
 
 <script>
