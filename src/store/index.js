@@ -26,8 +26,9 @@ export default createStore({
     delAction(context) {
       context.commit('setCount', this.getters.count - 1)
     },
-    // addCourses(context, value){
-    //   context.commit('setCourses' , this.$store.getters.Courses.push(value))
+    // addCourses(context, value) {
+    //   context.commit('setCourses', this.state.Courses.push(value))
+    //   console.log(this.state.Courses);
     // }
   },
   getters: {
